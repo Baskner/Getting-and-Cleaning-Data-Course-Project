@@ -39,6 +39,7 @@ head(tidy)
 
 write.table(tidy, file="tidy.txt")
 
+
 library(ggplot2)
 dat$activity <- as.factor(dat$activity)
 qplot(dat[,3], dat$subject, col=dat$activity)
